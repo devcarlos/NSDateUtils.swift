@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSDateUtilsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,72 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHr-Pt-L4d">
+                                <rect key="frame" x="270" y="35" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="dJU-sO-Vcf"/>
+                                    <constraint firstAttribute="height" constant="21" id="qKo-Sn-0Uf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dv-9c-M4A">
+                                <rect key="frame" x="246" y="77" width="108" height="35"/>
+                                <color key="backgroundColor" red="0.043137254899999998" green="0.7725490196" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="LDf-yt-CFk"/>
+                                    <constraint firstAttribute="height" constant="35" id="T9m-1e-lFW"/>
+                                </constraints>
+                                <state key="normal" title="Short Date">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shortDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVr-IA-Ptu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1j-5n-9WJ">
+                                <rect key="frame" x="270" y="148" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="A9E-D1-lNa"/>
+                                    <constraint firstAttribute="width" constant="60" id="Qb2-q2-f36"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAf-T9-7JM">
+                                <rect key="frame" x="246" y="190" width="108" height="35"/>
+                                <color key="backgroundColor" red="0.043137254899999998" green="0.7725490196" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="6qS-oL-wVB"/>
+                                    <constraint firstAttribute="height" constant="35" id="Pmh-Lb-jsl"/>
+                                </constraints>
+                                <state key="normal" title="Long Date">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="longDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCF-OJ-w8S"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rAf-T9-7JM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Io-b5-HER"/>
+                            <constraint firstItem="h1j-5n-9WJ" firstAttribute="top" secondItem="3Dv-9c-M4A" secondAttribute="bottom" constant="36" id="9Ja-JK-MvD"/>
+                            <constraint firstItem="tHr-Pt-L4d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="CZ4-vS-e6V"/>
+                            <constraint firstItem="h1j-5n-9WJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TXf-bx-UOW"/>
+                            <constraint firstItem="3Dv-9c-M4A" firstAttribute="top" secondItem="tHr-Pt-L4d" secondAttribute="bottom" constant="21" id="X0G-Mx-wQh"/>
+                            <constraint firstItem="rAf-T9-7JM" firstAttribute="top" secondItem="h1j-5n-9WJ" secondAttribute="bottom" constant="21" id="X55-ir-qb6"/>
+                            <constraint firstItem="3Dv-9c-M4A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fct-1c-5LB"/>
+                            <constraint firstItem="tHr-Pt-L4d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="suG-fv-8gu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="360" y="230"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import NSDateUtils
 @testable import NSDateUtilsDemo
 
 class NSDateUtilsDemoTests: XCTestCase {
@@ -21,16 +22,18 @@ class NSDateUtilsDemoTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDateFromString() {
+        let date = NSDate().dateFromString("1/1/2013")
+        XCTAssertTrue(date.isKindOfClass(NSDate))
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testShortDate() {
+        let date = NSDate().dateFromString("1/1/2013")
+        XCTAssert(date.convertToString() == "2013-01-01", "Is Not Valid Date String")
     }
-    
+
+    func testLongDate() {
+        let date = NSDate().dateFromString("10/12/2013")
+        XCTAssert(date.convertToLongString() == "Sat, Oct 12 2013, 00:00", "Is Not Valid Date String")
+    }
 }

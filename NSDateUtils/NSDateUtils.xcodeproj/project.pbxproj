@@ -17,8 +17,7 @@
 		130E50121D010B73005A0CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130E50101D010B73005A0CD2 /* LaunchScreen.storyboard */; };
 		130E501D1D010B73005A0CD2 /* NSDateUtilsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130E501C1D010B73005A0CD2 /* NSDateUtilsDemoTests.swift */; };
 		130E502B1D010D69005A0CD2 /* NSDateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130E4FFF1D010707005A0CD2 /* NSDateUtils.swift */; };
-		130E502D1D010D8E005A0CD2 /* NSDateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130E4FFF1D010707005A0CD2 /* NSDateUtils.swift */; };
-		130E502E1D010DB5005A0CD2 /* NSDateUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130E4FE51D0105BC005A0CD2 /* NSDateUtils.framework */; };
+		1313E9431D01BD0E00782837 /* NSDateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130E4FFF1D010707005A0CD2 /* NSDateUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +34,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 130E50041D010B73005A0CD2;
 			remoteInfo = NSDateUtilsDemo;
-		};
-		130E50291D010D64005A0CD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 130E4FDC1D0105BC005A0CD2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 130E4FE41D0105BC005A0CD2;
-			remoteInfo = NSDateUtils;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -85,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				130E502E1D010DB5005A0CD2 /* NSDateUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +214,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				130E502A1D010D64005A0CD2 /* PBXTargetDependency */,
 			);
 			name = NSDateUtilsDemo;
 			productName = NSDateUtilsDemo;
@@ -350,7 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				130E500A1D010B73005A0CD2 /* ViewController.swift in Sources */,
-				130E502D1D010D8E005A0CD2 /* NSDateUtils.swift in Sources */,
+				1313E9431D01BD0E00782837 /* NSDateUtils.swift in Sources */,
 				130E50081D010B73005A0CD2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,11 +365,6 @@
 			isa = PBXTargetDependency;
 			target = 130E50041D010B73005A0CD2 /* NSDateUtilsDemo */;
 			targetProxy = 130E50191D010B73005A0CD2 /* PBXContainerItemProxy */;
-		};
-		130E502A1D010D64005A0CD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 130E4FE41D0105BC005A0CD2 /* NSDateUtils */;
-			targetProxy = 130E50291D010D64005A0CD2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -612,6 +597,7 @@
 				130E4FFB1D0105BC005A0CD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		130E4FFC1D0105BC005A0CD2 /* Build configuration list for PBXNativeTarget "NSDateUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -620,6 +606,7 @@
 				130E4FFE1D0105BC005A0CD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		130E501F1D010B73005A0CD2 /* Build configuration list for PBXNativeTarget "NSDateUtilsDemo" */ = {
 			isa = XCConfigurationList;
@@ -628,6 +615,7 @@
 				130E50211D010B73005A0CD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		130E50221D010B73005A0CD2 /* Build configuration list for PBXNativeTarget "NSDateUtilsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +624,7 @@
 				130E50241D010B73005A0CD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

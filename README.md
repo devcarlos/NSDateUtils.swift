@@ -14,7 +14,7 @@ NSDateUtils.swift is an extension for NSDate written in Swift
 ```swift
 import NSDateUtils
 
-let date = NSDate()
+let date = NSDate().dateFromString("10/12/2013")
 
 //using format: EE, LLL d yyyy, HH:mm
 let longDate = date.convertToLongString()
