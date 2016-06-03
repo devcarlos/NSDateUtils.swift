@@ -1,6 +1,6 @@
 # NSDateUtils.swift ![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/NSDateUtils.swift/badge.png) [![Platform](https://img.shields.io/cocoapods/p/NSDateUtils.swift.svg)](http://cocoadocs.org/docsets/NSDateUtils.swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/devcarlos/NSDateUtils.svg)](https://travis-ci.org/devcarlos/NSDateUtils) [![license MIT](https://img.shields.io/cocoapods/l/NSDateUtils.svg)](http://opensource.org/licenses/MIT)
 
-NSDateUtils.swift is an extension for NSDate written in Swift
+NSDateUtils.swift is an extension with helper functions for NSDate written in Swift
 
 ## Features
 
