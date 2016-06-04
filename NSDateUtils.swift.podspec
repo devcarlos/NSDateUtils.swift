@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NSDateUtils.swift"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "NSDateUtils.swift is an extension with helper functions for NSDate written in Swift"
   s.homepage     = "https://github.com/devcarlos/NSDateUtils.swift"
   s.license      = { :type => "MIT", :file => "LICENSE" }
