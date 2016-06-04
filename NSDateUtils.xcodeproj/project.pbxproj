@@ -17,7 +17,6 @@
 		130E50121D010B73005A0CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130E50101D010B73005A0CD2 /* LaunchScreen.storyboard */; };
 		130E501D1D010B73005A0CD2 /* NSDateUtilsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130E501C1D010B73005A0CD2 /* NSDateUtilsDemoTests.swift */; };
 		130E502B1D010D69005A0CD2 /* NSDateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130E4FFF1D010707005A0CD2 /* NSDateUtils.swift */; };
-		1313E9431D01BD0E00782837 /* NSDateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130E4FFF1D010707005A0CD2 /* NSDateUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -340,7 +339,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				130E500A1D010B73005A0CD2 /* ViewController.swift in Sources */,
-				1313E9431D01BD0E00782837 /* NSDateUtils.swift in Sources */,
 				130E50081D010B73005A0CD2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
